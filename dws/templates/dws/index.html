@@ -1,0 +1,13 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'dws/style.css' %}">
+
+<html>
+<body>
+    <ul>
+        {% for area in areas%}
+            <li>{{area.name}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
